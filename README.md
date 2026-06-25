@@ -1,6 +1,7 @@
 # Integrate into Finland 🇫🇮
 
-A premium, state-of-the-art job application tracker, Finnish job feed aggregator, and AI-powered CV tailoring assistant. This application is designed specifically to help international and local job seekers navigate, track, and optimize their job search in the Finnish market.
+An all-in-one companion helping job seekers integrate into Finnish society and land their next role. This platform features a live Finnish job feed aggregator, an AI-powered CV parsing & tailoring assistant, and a built-in Kanban board to track your entire application pipeline.
+
 
 ## ✨ Features
 
