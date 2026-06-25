@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Integrate into Finland 🇫🇮
 
-## Getting Started
+A premium, state-of-the-art job application tracker, Finnish job feed aggregator, and AI-powered CV tailoring assistant. This application is designed specifically to help international and local job seekers navigate, track, and optimize their job search in the Finnish market.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **📊 Kanban Application Tracker**: A fully interactive drag-and-drop dashboard to organize your job pipeline from Wishlist and Applied, to Interviews and Offers.
+- **🔍 Finnish Job Feed Aggregator**: Real-time integration and scraping of job listings from popular Finnish platforms (e.g., Jobly, Duunitori) with automatic translation helpers.
+- **🤖 AI CV Assistant & Document Explorer**: Upload, parse, edit, and tailor your CVs and cover letters for specific job descriptions using Gemini API integration.
+- **📂 Document Explorer**: Keep all your job-hunting collateral (resumes, cover letters, certificates) organized in one secure place.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: Next.js (App Router)
+- **Styling**: Tailwind CSS & Modern Custom Styling
+- **Database**: SQLite (LibSQL / local database)
+- **Scraper**: Playwright (for headless job scraping)
+- **AI Engine**: Google Gemini API (`@google/generative-ai`)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+- Node.js (v18.x or later)
+- NPM or Yarn
+- A Google Gemini API Key (Optional, for AI CV Tailoring)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/eurusfox-24/Integrate-into-Finland.git
+   cd Integrate-into-Finland
+   ```
 
-## Deploy on Vercel
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Configure Environment Variables:
+   Create a `.env.local` file in the root directory and add your Gemini API Key:
+   ```env
+   GEMINI_API_KEY=your_gemini_api_key_here
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) (or the port specified in terminal) in your browser.
+
+## 📂 Project Structure
+
+- `src/app/` - Next.js page routes, layouts, and API endpoints (jobs, cvs, chatbot).
+- `src/components/` - Main interface modules:
+  - `KanbanBoard.tsx` - Application pipeline manager.
+  - `JobFeed.tsx` - Aggregator for job feeds.
+  - `DocumentExplorer.tsx` - PDF/markdown resume and cover letter helper.
+- `src/lib/` - Scrapers and database configuration helpers.
+- `src/utils/` - Local helper utilities.
+
+---
+*Created as part of the Integrate into Finland job hunting suite.*
